@@ -20,13 +20,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .wiinnovaLogo{
-  background:url(../images/logo.png);
+  background:url(../images/logo.png) no-repeat;
   height: 60px;
   width: 265px;
 }
 .wiinnovaBrand{
   .wiinnovaLogo{
-    background-size: 130px 30px;  
+    background-size: 130px;  
     height: 30px;
     width: 130px;
   }
@@ -114,6 +114,7 @@ h2 {
   margin-top: 0;
   margin-bottom: 10px;
 }
+
 h1.heading{
   border-bottom: 1px solid $mainColor;
   padding-bottom: 26px;
@@ -154,7 +155,11 @@ h1.heading{
   background: radial-gradient(ellipse at center, #50ce63 0%,#197500 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50ce63', endColorstr='#197500',GradientType=1 );
   .wiinnovaLogo{
-    margin:100px auto;
+    margin: 100px auto;
+    margin-top: 22%;
+    height: 105px;
+    width: 500px;
+    background-size: 500px;
   }
   h1 {
     font-size: 70px;
@@ -178,7 +183,11 @@ h1.heading{
 }
 }
 .product{
-  margin: 10px 30px;
+  margin: 0 50px 100px 50px;
+  .heading{
+    text-align: left;
+    margin-left: 87px;
+  }
 }
 .main section.page2 {
   background: #3498db ;
@@ -251,18 +260,25 @@ h1.heading{
 }
 
 .main section.page3 {
-  background:#f39c12;
-
+  background:#fff;
+  color:#000;
+  .heading{
+    color:#3498db;
+    border-color:#3498db;
+  }
   p{
+    line-height: 1.8em;
     text-align: justify;
     text-indent: 40px;
     margin: 10px 0;
   }
-  h4 a{
-    color: #fff;
+  h2 a{
+     color:#3498db;
+     border-color:#3498db;
   }
   .productSubIcon{
     margin-right: 20px;
+    color: #3498db;
   }
   .weagleBrand{
     font-size: 55px;

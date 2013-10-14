@@ -6,10 +6,7 @@ $(document).ready(function(){
 		var height = $(window).innerHeight();
 		$('.main > section').css('min-height',height);
 		$('body').scrollspy({ target: '#nav' ,offset: '50px'})
-		$('[data-spif (true) {} else{};y="scroll"]').each(function () {
-		  var $spy = $(this).scrollspy('refresh');
-		  console.log($spy);
-		})
+		
 /*		$(window).scroll(function() {
 
 		});
