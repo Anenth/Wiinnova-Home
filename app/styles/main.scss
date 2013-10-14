@@ -7,17 +7,17 @@ $FontAwesomePath: "../bower_components/font-awesome/font/";
 $mainColor : #fff;
 
 html {
-    height: 100%;
+  height: 100%;
 }
 body {
-    background: #fff;
-    padding: 0;
-    text-align: center;
-    font-family: 'open sans';
-    position: relative;
-    margin: 0;
-    height: 100%;
-    -webkit-font-smoothing: antialiased;
+  background: #fff;
+  padding: 0;
+  text-align: center;
+  font-family: 'open sans';
+  position: relative;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 .wiinnovaLogo{
   background:url(../images/logo.png);
@@ -32,239 +32,250 @@ body {
   }
 }
 .carousel-inner > .item{
-    height: 170px;
+  height: 170px;
 }
 .carousel.fade
 {
-    opacity: 1;
-    .item
-    {
-        left: 0 !important;
-        opacity: 0;
-        top:0;
-        position:absolute;
-        width: 100%;
-        display:block !important;
-        z-index:1;
-        &:first-child{
-            top:auto;
-            position:relative;
-        }
-        &.active
-        {
-            opacity: 1;
-            -webkit-animation: Pulse .7s  ease-in-out;
-            -o-animation: Pulse .7s  ease-in-out;
-            animation: Pulse .7s  ease-in-out;
-            z-index:2;
-        }
+  opacity: 1;
+  .item
+  {
+    left: 0 !important;
+    opacity: 0;
+    top:0;
+    position:absolute;
+    width: 100%;
+    display:block !important;
+    z-index:1;
+    &:first-child{
+      top:auto;
+      position:relative;
     }
+    &.active
+    {
+      opacity: 1;
+      -webkit-animation: Pulse .7s  ease-in-out;
+      -o-animation: Pulse .7s  ease-in-out;
+      animation: Pulse .7s  ease-in-out;
+      z-index:2;
+    }
+  }
 }
 .carousel-caption{
-    padding-bottom:0;
+  padding-bottom:0;
 }
 .navbar-default{
-   background-color: transparent;
-   border:0;
-   -webkit-transition: all 500ms ease-in-out;
-   -moz-transition: all 500ms ease-in-out;
-   -o-transition: all 500ms ease-in-out;
-   transition: all 500ms ease-in-out;
-   .navbar-brand{
-    color:#fff;
-    font-size:41px;
+ background-color: transparent;
+ border:0;
+ -webkit-transition: all 500ms ease-in-out;
+ -moz-transition: all 500ms ease-in-out;
+ -o-transition: all 500ms ease-in-out;
+ transition: all 500ms ease-in-out;
+ .navbar-brand{
+  color:#fff;
+  font-size:41px;
 }
-.navbar-nav > li > a{
+.navbar-nav > li{
+  &.active a,&:hover a, &:focus a,&.active a:hover,&.active a:focus{
+    background:transparent;
     color:#fff;
-    &:hover, &:focus{
-        color:#fff;
-        text-shadow: 0 0 2px white;
-    }
+    text-shadow: 0 0 2px white;
+    border-bottom:1px $mainColor solid;
+  }
+  a{
+    color:#fff;
+  }
 }
 }
 
 .weagleBrand{
-    font-family: 'Tangerine', cursive;
-    font-size:90px;
-    font-weight: 100;
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
+  font-family: 'Tangerine', cursive;
+  font-size:90px;
+  font-weight: 100;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 
 
 h1, h2 {
-    font-family: 'open sans';
-    font-weight: 100;
-    color: $mainColor;
+  font-family: 'open sans';
+  font-weight: 100;
+  color: $mainColor;
 }
 h1 {
-    margin-bottom: 5px;
-    font-size: 70px;
-    letter-spacing: -4px;
-    font-weight: 100;
+  margin-bottom: 5px;
+  font-size: 70px;
+  letter-spacing: -4px;
+  font-weight: 100;
 }
 h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 h1.heading{
-    border-bottom: 1px solid $mainColor;
-    padding-bottom: 26px;
-    margin-bottom: 55px;
-    font-size: 50px;
-    color:#fff;
+  border-bottom: 1px solid $mainColor;
+  padding-bottom: 26px;
+  margin-bottom: 55px;
+  font-size: 50px;
+  color:#fff;
 }
 
 .main h1 {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 .main > section{
+  min-height: 700px;
   color:#fff;
   padding: 30px 0;
   a{
+    color:#fff;
+    text-decoration: none;
+    border-bottom: dashed 1px #fff;
+    &:hover{
       color:#fff;
-      text-decoration: none;
-      border-bottom: dashed 1px #fff;
-      &:hover{
-        color:#fff;
-        border-bottom: solid 1px #fff;
-      }
+      border-bottom: solid 1px #fff;
     }
+  }
 }
 
 .main section.page1 {
   text-align: center;
-   background: #50ce63;
-   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM1MGNlNjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTk3NTAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-   background: -moz-radial-gradient(center, ellipse cover, #50ce63 0%, #197500 100%);
-   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#50ce63), color-stop(100%,#197500));
-   background: -webkit-radial-gradient(center, ellipse cover, #50ce63 0%,#197500 100%);
-   background: -o-radial-gradient(center, ellipse cover, #50ce63 0%,#197500 100%);
-   background: -ms-radial-gradient(center, ellipse cover, #50ce63 0%,#197500 100%);
-   background: radial-gradient(ellipse at center, #50ce63 0%,#197500 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50ce63', endColorstr='#197500',GradientType=1 );
-    .wiinnovaLogo{
-      margin:100px auto;
-    }
-    h1 {
-        font-size: 70px;
-        font-weight: bold;
-    }
-    
-    h1.weagleBrand{
-        font-weight: 100;
-        margin-top: 65px;
-        font-size: 300px; 
-        margin-left: -60px;
-    }
+  background: #50ce63;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM1MGNlNjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTk3NTAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover, #50ce63 0%, #197500 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#50ce63), color-stop(100%,#197500));
+  background: -webkit-radial-gradient(center, ellipse cover, #50ce63 0%,#197500 100%);
+  background: -o-radial-gradient(center, ellipse cover, #50ce63 0%,#197500 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #50ce63 0%,#197500 100%);
+  background: radial-gradient(ellipse at center, #50ce63 0%,#197500 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50ce63', endColorstr='#197500',GradientType=1 );
+  .wiinnovaLogo{
+    margin:100px auto;
+  }
+  h1 {
+    font-size: 70px;
+    font-weight: bold;
+  }
+
+  h1.weagleBrand{
+    font-weight: 100;
+    margin-top: 65px;
+    font-size: 300px; 
+    margin-left: -60px;
+  }
 }
 @mixin hexgonColor($color){
-    background:$color;
-    &:before {
-     border-bottom: 12px solid $color;
+  background:$color;
+  &:before {
+   border-bottom: 12px solid $color;
  }
  &:after {
-    border-top: 12px solid $color;
- }
+  border-top: 12px solid $color;
+}
 }
 .product{
   margin: 10px 30px;
 }
 .main section.page2 {
-    background: #3498db ;
-    h2{
-      margin-top:20px;
-    }
-    p{
-      text-align: justify;
-    }
-    h4{
-      text-align: left;
-    }
-    .heading{
-      margin-top: 80px;
-      margin-bottom: 40px;
-    }
-   }
- .hexgonShape {
-     width: 50px;
-     height: 30px;
-     background: #cdabef;
-     position: relative;
-     text-align: center;
-     color:#fff;
-     margin:30px 20px;
+  background: #3498db ;
+  h2{
+    margin-top:20px;
+  }
+  .pull-left {
+    margin: 30px 20px;
+  }
+  p{
+    text-align: justify;
+  }
+  h4{
+    text-align: left;
+  }
 
-     &:before,&:after{
-         content: "";
-         position: absolute;
-         left: 0;
-         width: 0;
-         height: 0;
-         border-left: 25px solid transparent;
-         border-right: 25px solid transparent;
-     }
-     &:before {
-      top: -12px;
-      border-bottom: 12px solid #cdabef;
+  .heading{
+    margin-top: 80px;
+    margin-bottom: 40px;
   }
-  &:after {
-      bottom: -12px; 
-      border-top: 12px solid #cdabef;
-  }
-  }
- .blueColor{
-     @include hexgonColor(#3498db);
+}
+.hexgonShape {
+ width: 50px;
+ height: 30px;
+ background: #cdabef;
+ position: relative;
+ text-align: center;
+ color:#fff;
+ margin:30px 20px;
+
+ &:before,&:after{
+   content: "";
+   position: absolute;
+   left: 0;
+   width: 0;
+   height: 0;
+   border-left: 25px solid transparent;
+   border-right: 25px solid transparent;
  }
- .yellowColor{
-     @include hexgonColor(#f1c40f);
- }
- .asphaltColor{
-     @include hexgonColor(#34495e);
- }
- .litblueColor{
-     @include hexgonColor(#1abc9c);
- }
- .orangeColor{
-     @include hexgonColor(#f39c12);
- }
- .greenColor{
-     @include hexgonColor(#2ecc71);
- }
+ &:before {
+  top: -12px;
+  border-bottom: 12px solid #cdabef;
+}
+&:after {
+  bottom: -12px; 
+  border-top: 12px solid #cdabef;
+}
+}
+.blueColor{
+ @include hexgonColor(#3498db);
+}
+.yellowColor{
+ @include hexgonColor(#f1c40f);
+}
+.asphaltColor{
+ @include hexgonColor(#34495e);
+}
+.litblueColor{
+ @include hexgonColor(#1abc9c);
+}
+.orangeColor{
+ @include hexgonColor(#f39c12);
+}
+.greenColor{
+ @include hexgonColor(#2ecc71);
+}
 .whiteColor{
-     @include hexgonColor(#fff);
- }
+ @include hexgonColor(#fff);
+
+}
 
 .main section.page3 {
-    background:#f39c12;
-    
-    p{
-      text-align: justify;
-      margin: 10px 0;
-    }
-    h4 a{
-      color: #fff;
-    }
-    .productSubIcon{
-      margin-right: 20px;
-    }
-    .weagleBrand{
-        font-size: 55px;
-    }
+  background:#f39c12;
+
+  p{
+    text-align: justify;
+    text-indent: 40px;
+    margin: 10px 0;
+  }
+  h4 a{
+    color: #fff;
+  }
+  .productSubIcon{
+    margin-right: 20px;
+  }
+  .weagleBrand{
+    font-size: 55px;
+  }
 
 }
 .main section.page4 {
-    background:#1abc9c;
-    h2 {
-        line-height: 58px;
-        font-weight: 100;
-        font-size: 21px;
-    }
+  background:#1abc9c;
+  h2 {
+    line-height: 58px;
+    font-weight: 100;
+    font-size: 21px;
+  }
 
 }
 .main section.page5{
@@ -272,82 +283,105 @@ h1.heading{
   .heading{
     border:0;
   }
+  h2 {
+    line-height: 58px;
+    font-weight: 100;
+    font-size: 21px;
+  }
 }
 
 #note .notification_error {
-    color:#f00;
+  color:#f00;
 }
 label{
-    display: block;
-    font-weight: normal;
-    text-align: left;
+  display: block;
+  font-weight: normal;
+  text-align: left;
 }
 .form-control{
-    border-radius:0;
-    padding:20px;
-    &:hover,&:focus{
-        border-color: $mainColor;
-    }
+  border-radius:0;
+  padding:20px;
+  &:hover,&:focus{
+    border-color: $mainColor;
+  }
+}
+.android-logo{
+  color:#99CC00;
+}
+.html5-logo{
+  background:url(../images/html5.png);
+}
+.weagle-logo{
+  background:url(../images/weagle.png);
+}
+.wiblu-logo{
+  background:url(../images/wiblu.png);
+}
+.html5-logo,.weagle-logo,.wiblu-logo{
+ width: 50px;
+ height: 50px;
+ background-size: 50px;
 }
 #contacts .socialIcons{
-    margin-top: 60px;
-    margin-bottom: 30px;
-    padding-bottom:30px;
-    border-bottom: 1px solid #fff;
-    a{
-        color:#2ecc71;
-        display: inline-block;
-        text-decoration: none;
-        border:none;
-        margin: 0 20px;
-        font-size:20px;
-        -webkit-transition: all 500ms ease-in-out;
-        -moz-transition: all 500ms ease-in-out;
-        -o-transition: all 500ms ease-in-out;
-        transition: all 500ms ease-in-out;
-        &:nth-child(1):hover{
-            color:#3B5A9B;
-        }
-        &:nth-child(2):hover,&:nth-child(5):hover{
-            color:#F00;
-        }
-        &:nth-child(3):hover{
-            color:#0073B2;
-        }
-        &:nth-child(4):hover{
-            color:#49C8F5;
-        }
-        &:nth-child(6):hover{
-            color:#000;
-        }
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding-bottom:30px;
+  border-bottom: 1px solid #fff;
+  a{
+    color:#2ecc71;
+    display: inline-block;
+    text-decoration: none;
+    border:none;
+    margin: 0 20px;
+    font-size:20px;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    &:nth-child(1):hover{
+      color:#3B5A9B;
     }
-}
+    &:nth-child(3):hover{
+      color:#49C8F5;
+    }
+    &:nth-child(2):hover{
+      color:#0073B2;
+    }
 
-
-@keyframes Pulse {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(.1);
-    -ms-transform: scale(.1);
-    -o-transform: scale(.1);
-    transform: scale(.1);
-  }
-
-  75% {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
   }
 }
+.contacts_div{
 
+  .contact-item{
+    text-align: left;
+    p{
+      margin-top: 34px;
+    }
+  }
+  .contact-item:first-child{
+    margin-top: 30px;
+  }
+  i{
+    color:#2ecc71;
+    display: inline-block;
+    text-decoration: none;
+    border:none;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+.btn-black{
+  background:#000;
+  color:#fff;
+}
+.copyright{
+  background:#000;
+  padding: 10px 0 3px 0;
+  p{
+    color:#fff;
+  }
+}
 @media screen and (min-width: 768px) {
 
 }
