@@ -27,7 +27,7 @@ body {
 .wiinnovaBrand{
   .wiinnovaLogo{
     background-size: 130px;  
-    height: 30px;
+    height: 20px;
     width: 130px;
   }
 }
@@ -73,6 +73,10 @@ body {
  .navbar-brand{
   color:#fff;
   font-size:41px;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 .navbar-nav > li{
   &.active a,&:hover a, &:focus a,&.active a:hover,&.active a:focus{
@@ -86,18 +90,6 @@ body {
   }
 }
 }
-
-.weagleBrand{
-  font-family: 'Tangerine', cursive;
-  font-size:90px;
-  font-weight: 100;
-  -webkit-transition: all 500ms ease-in-out;
-  -moz-transition: all 500ms ease-in-out;
-  -o-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
-}
-
-
 
 h1, h2 {
   font-family: 'open sans';
@@ -143,6 +135,20 @@ h1.heading{
   }
 }
 
+.viewingPage0 .navbar-default{
+  .navbar-brand{
+    opacity: 0;
+  }
+}
+.viewingPage1 .navbar-default{
+  background:#50ce63;
+}
+.viewingPage2 .navbar-default,.viewingPage3 .navbar-default{
+  background:#3498db;
+}
+.viewingPage4 .navbar-default{
+  background:#1abc9c;
+}
 .main section.page1 {
   text-align: center;
   background: #50ce63;
@@ -165,14 +171,9 @@ h1.heading{
     font-size: 70px;
     font-weight: bold;
   }
-
-  h1.weagleBrand{
-    font-weight: 100;
-    margin-top: 65px;
-    font-size: 300px; 
-    margin-left: -60px;
-  }
+ 
 }
+
 @mixin hexgonColor($color){
   background:$color;
   &:before {
@@ -400,4 +401,12 @@ label{
 }
 @media screen and (min-width: 768px) {
 
+}
+
+
+.scrollspy-example {
+position: relative;
+height: 200px;
+margin-top: 10px;
+overflow: auto;
 }

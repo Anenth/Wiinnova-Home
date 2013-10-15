@@ -4,11 +4,11 @@ $(document).ready(function(){
 	$(function() {
 
 		var height = $(window).innerHeight();
+		var body = $('body');
 		$('.main > section').css('min-height',height);
-		$('body').scrollspy({ target: '#nav' ,offset: '50px'})
-		
-/*		$(window).scroll(function() {
-
+		$(window).scroll(function() {
+			var page = body.scrollTop()/height | 0;
+			body.attr('class','viewingPage'+ page);
 		});
 		$('a[href*=#]:not([href=#])').click(function() {
 			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
@@ -23,14 +23,14 @@ $(document).ready(function(){
 				return false;
 			}
 		}
-	});*/
+	});
 	});
 	
 	$('#ajax-contact-form').submit(function(e) {
 		e.preventDefault();
 
 		Parse.initialize('6qhUFEXtzdSTLwzG9VMeCU5oFaTWtgelh61unUiw', 'cTi3fECgna7cBjeYdyNIA6qnjehp1O8Ldrs8c5pe');
-		var Message = Parse.Object.extend('Messages_From_Showcase');
+		var Message = Parse.Object.extend('WiinnovaContact');
 		var message = new Message();
 		message.save({
 			name: $('#inputName').val(),
