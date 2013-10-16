@@ -146,7 +146,7 @@ h1.heading{
 .viewingPage2 .navbar-default,.viewingPage3 .navbar-default{
   background:#3498db;
 }
-.viewingPage4 .navbar-default{
+.viewingPage4 .navbar-default,.viewingPage5 .navbar-default{
   background:#1abc9c;
 }
 .main section.page1 {
@@ -280,6 +280,7 @@ h1.heading{
   .productSubIcon{
     margin-right: 20px;
     color: #3498db;
+    font-size: 20px;
   }
   .weagleBrand{
     font-size: 55px;
@@ -391,6 +392,13 @@ label{
 .btn-black{
   background:#000;
   color:#fff;
+}
+#contacts{
+  padding-bottom:0;
+}
+#map-canvas{
+  margin-top:40px;
+  height: 400px;
 }
 .copyright{
   background:#000;
