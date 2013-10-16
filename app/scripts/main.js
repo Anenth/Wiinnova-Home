@@ -30,11 +30,11 @@ $(document).ready(function(){
 			var mapOptions = {
 				zoom: 13,
 				center: myLatLng,
-				disableDefaultUI: true,
+				/*disableDefaultUI: true,
 				scrollwheel: false,
 				navigationControl: false,
 				mapTypeControl: false,
-				scaleControl: false,
+				scaleControl: false,*/
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
 
