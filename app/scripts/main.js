@@ -24,14 +24,15 @@ $(document).ready(function(){
 			}
 		}
 	});
+		// 11.317849,75.931808‎
 		var map;
 		function initialize() {
-			var myLatLng = new google.maps.LatLng(11.317849, 75.931808‎);
+			var myLatLng = new google.maps.LatLng(11.317849,75.93180);
 			var mapOptions = {
-				zoom: 15,
+				zoom: 16,
 				center: myLatLng,
-				/*disableDefaultUI: true,
 				scrollwheel: false,
+				/*disableDefaultUI: true,
 				navigationControl: false,
 				mapTypeControl: false,
 				scaleControl: false,*/
