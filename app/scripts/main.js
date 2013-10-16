@@ -26,9 +26,9 @@ $(document).ready(function(){
 	});
 		var map;
 		function initialize() {
-			var myLatLng = new google.maps.LatLng(11.264949, 75.794967);
+			var myLatLng = new google.maps.LatLng(11.317849, 75.931808‎);
 			var mapOptions = {
-				zoom: 13,
+				zoom: 15,
 				center: myLatLng,
 				/*disableDefaultUI: true,
 				scrollwheel: false,
